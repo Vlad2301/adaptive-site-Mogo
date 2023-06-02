@@ -222,3 +222,144 @@ h6 {
     font-size: 24px;
     font-weight: 700;
 }
+
+
+/* Section */
+.section {
+    padding: 90px 0;
+}
+
+/* Section header */
+.section__header {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Kaushan Script', cursive;
+    color: #333333;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section__title {
+    font-size: 30px;
+    color: #333333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section__text {
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 90px;
+}
+
+
+.section__title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 40px auto;
+
+    background-color: #f38181;
+}
+
+/* Section about */
+.section__about {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.about__item {
+    width: 380px;
+    position: relative;
+
+    background-color: #95e1d3;
+}
+
+.about__item:hover .about__image {
+    transform: translate(-10px, -10px);
+}
+
+.about__item:hover .about__text {
+    opacity: 1;
+}
+
+.about__item:hover .about__image img {
+    opacity: 0.1;
+}
+
+
+.about__image {
+    background: linear-gradient(to bottom, #fce38a, #f38181);
+
+    transition: transform 0.2s linear;
+}
+
+.about__image img {
+    display: block;
+
+    transition: opacity 0.2s linear;
+}
+
+.about__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+/* Stats */
+.stats {
+    background-color: #95e1d3;
+}
+
+.stats__inner {
+    display: flex;
+}
+
+.stats__item {
+    padding: 70px 25px;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    border-left: 1px solid #b5eae0;
+
+    text-align: center;
+
+}
+
+.stats__item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stats__item__num {
+    font-weight: 700;
+    font-size: 72px;
+    color: #fff;
+}
+
+
+.stats__item__text {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
